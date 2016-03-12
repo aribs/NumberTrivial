@@ -133,12 +133,10 @@ function drawGoodResponse(){
 function drawBadResponse(){
     $('#resultslabel').append("<hr>");
     $('#resultslabel').append("Question " + (GlobalIterator + 1) + " : " + ArrayQuestion[GlobalIterator].questionText + '?');
-    $('#resultslabel').append("<br> <span class='glyphicon glyphicon-remove' aria-hidden='true' id='iconOk'></span> " +   "The correct answer is: " + ArrayQuestion[GlobalIterator].answer);
+    $('#resultslabel').append("<br> <span class='glyphicon glyphicon-remove' aria-hidden='true' id='iconBad'></span> " +   "The correct answer is: " + ArrayQuestion[GlobalIterator].answer);
 
 };
 function updateProgressBar(){
-    console.log('aaaaaaaaa')
     var actualProgress = (GlobalIterator +1) * 10;
-    console.log("style='width: " + actualProgress + "%'");
     $('.progress-bar').css("width",  "" + actualProgress + "%");
 };
