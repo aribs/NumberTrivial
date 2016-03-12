@@ -1,13 +1,48 @@
 <html>
     <head>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body>
-        <h1>
+        <header>
+            <h1>
+                Trivial Numbers
+            </h1>
+            <hr>
+        </header>
+       <div class="container">
+           <div class="row">
+                <span id="countQuestion">Text of question remaind</span>
+                <div id="progressBar">
+                    here is the section of the progress bar
+                </div>
+           </div>
+           <div class="row">
+               <div class="questionText">
 
-        </h1>
+               </div>
+               <div class="selectAnswers">
+                   <div class="radio">
+                       <label>
+                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad1" value="option1"> Text1
+                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad2" value="option1"> Text2
+                       </label>
+                       <label>
+                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerTrue" value="option1"> Text3True
+                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad3" value="option1"> Text4
+                       </label>
+                    </div>
+               </div>
+           </div>
+           <div id="buttonsSelect">
+               <button>Send</button>
+               <button>I dont know</button>
+           </div>
+       </div>
+
+
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="script.js" async="async"></script>
     </body>
 </html>
