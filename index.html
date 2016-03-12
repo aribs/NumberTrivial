@@ -23,18 +23,27 @@
                <div class="selectAnswers">
                    <div class="radio">
                        <label>
-                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad1" value="option1"> Text1
-                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad2" value="option1"> Text2
+                           <input type="radio" name="inlineRadioOptions"  value="false">
+                           <span id="inlineAnswerBad1"></span>
                        </label>
                        <label>
-                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerTrue" value="option1"> Text3True
-                           <input type="radio" name="inlineRadioOptions" id="inlineAnswerBad3" value="option1"> Text4
+                           <input type="radio" name="inlineRadioOptions"  value="false">
+                           <span id="inlineAnswerBad2"></span>
+                       </label>
+                       <br>
+                       <label>
+                           <input type="radio" name="inlineRadioOptions"  value="true" id="answerTrue">
+                           <span id="inlineAnswerTrue"></span>
+                       </label>
+                       <label>
+                           <input type="radio" name="inlineRadioOptions"  value="false">
+                           <span id="inlineAnswerBad3"></span>
                        </label>
                     </div>
                </div>
            </div>
            <div id="buttonsSelect">
-               <button>Send</button>
+               <button id="buttonSend">Send</button>
                <button>I dont know</button>
            </div>
        </div>

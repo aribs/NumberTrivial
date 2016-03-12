@@ -4,7 +4,7 @@
 var GlobalQuestion = '';
 $(document).ready(function(){
    var ArrayQuestion = getArrayQuestions();
-
+   game(ArrayQuestion);
 
 
 });
@@ -79,4 +79,21 @@ function getArrayQuestions(){
     ArrayQuestion.push(Question1);
 
     return ArrayQuestion;
-}
+};
+function game(ArrayQuestion){
+    $('.questionText').text(ArrayQuestion[0].questionText + '?');
+    $('#inlineAnswerBad1').text(ArrayQuestion[0].badResponse1);
+    $('#inlineAnswerBad2').text(ArrayQuestion[0].badResponse2);
+    $('#inlineAnswerTrue').text(ArrayQuestion[0].answer);
+    $('#inlineAnswerBad3').text(ArrayQuestion[0].badResponse3);
+
+
+};
+function compAnswer(){
+    if($('#answerTrue').is( ':checked' )){
+        console.log('good');
+    }
+};
+$('#buttonSend').on('click',function(){
+    compAnswer();
+});
