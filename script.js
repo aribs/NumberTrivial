@@ -2,8 +2,10 @@
  * Created by alejoribes on 11/3/16.
  */
 var GlobalQuestion = '';
+var GlobalIterator = 0;
+var ArrayQuestion = getArrayQuestions();
 $(document).ready(function(){
-   var ArrayQuestion = getArrayQuestions();
+
    game(ArrayQuestion);
 
 
@@ -81,19 +83,31 @@ function getArrayQuestions(){
     return ArrayQuestion;
 };
 function game(ArrayQuestion){
-    $('.questionText').text(ArrayQuestion[0].questionText + '?');
-    $('#inlineAnswerBad1').text(ArrayQuestion[0].badResponse1);
-    $('#inlineAnswerBad2').text(ArrayQuestion[0].badResponse2);
-    $('#inlineAnswerTrue').text(ArrayQuestion[0].answer);
-    $('#inlineAnswerBad3').text(ArrayQuestion[0].badResponse3);
-
+        if(GlobalIterator < 10) {
+            $('#countQuestion').text('Question ' + (GlobalIterator + 1) + ' of 10');
+            $('.questionText').text(ArrayQuestion[GlobalIterator].questionText + '?');
+            $('#inlineAnswerBad1').text(ArrayQuestion[GlobalIterator].badResponse1);
+            $('#inlineAnswerBad2').text(ArrayQuestion[GlobalIterator].badResponse2);
+            $('#inlineAnswerTrue').text(ArrayQuestion[GlobalIterator].answer);
+            $('#inlineAnswerBad3').text(ArrayQuestion[GlobalIterator].badResponse3);
+        }
+        else{
+            console.log('end of game tutututututututututtuttututut')
+        }
 
 };
 function compAnswer(){
     if($('#answerTrue').is( ':checked' )){
-        console.log('good');
+        GlobalIterator++;
+        game(ArrayQuestion);
+    }
+    else{
+        GlobalIterator++;
+        game(ArrayQuestion);
+
     }
 };
 $('#buttonSend').on('click',function(){
     compAnswer();
 });
+
