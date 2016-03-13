@@ -7,6 +7,8 @@ button{
     background: #41b1c7;
     border-style: none;
     border-radius: 3px;
+    width: 150px;
+    margin-top: 20px;
 }
 input[type='radio'] {
     -webkit-appearance:none;
@@ -29,6 +31,15 @@ input[type='radio']:before {
 input[type='radio']:checked:before {
     background: #41b1c7;
 }
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
 .radioAnswer{
     padding: 30px;
 }
@@ -50,4 +61,7 @@ input[type='radio']:checked:before {
 }
 .progress-bar{
     background: #41b1c7;
+}
+.selectAnswers{
+    margin-left: 42%;
 }
