@@ -122,7 +122,7 @@ $('#buttonDontKnow').on('click',function(){
 });
 
 function rnd1to100(){
-    return Math.round(Math.random() * (100 - 0) + 0);
+    return Math.round(Math.random() * (100 - 10) + 0);
 }
 function drawGoodResponse(){
     $('#resultslabel').append("<hr>");

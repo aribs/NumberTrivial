@@ -1,5 +1,5 @@
 body{
-    background: #021519;
+    background: #464F61;
     color: floralwhite;
     font-size: 18px;
 }
@@ -43,7 +43,7 @@ input[type='radio']:checked:before {
     background: #ff3642;
 }
 #buttonDontKnow{
-    background: #021519;
+    background: #464F61;
     border-style: solid;
     border-color: #41b1c7;
     color: #41b1c7;
